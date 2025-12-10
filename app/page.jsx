@@ -1,3 +1,6 @@
+// at the top of your page.jsx
+export const dynamic = "force-dynamic";
+
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import CompanionCard from '@/components/CompanionCard'
@@ -6,6 +9,7 @@ import Cta from '@/components/Cta'
 import { recentSessions } from '@/constants/index'
 import { getAllCompanions, getRecentSessions } from '@/lib/actions/companions.actions'
 import { getSubjectColor } from '@/lib/utils'
+
 
 const Page = async() => {
   const companions = await getAllCompanions({limit: 3});
