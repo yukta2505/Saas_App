@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const CompanionCard = ({id, name, topic, subject, duration, color}) => {
+const CompanionCard = ({id, name, topic, subject, duration, color, bookmarked}) => {
   return (
     <article className='companion-card' style={{backgroundColor: color}}>
       <div className='flex justify-between items-center'>
